@@ -1,10 +1,7 @@
-# Quixote - CSS Unit and Integration Testing
 
 Quixote is a library for testing CSS. It's fast—over 100 tests/second—and has a powerful API. You can use it for unit testing (test your CSS files directly) or integration testing (test against a real server). Either way, your tests check how HTML elements are actually rendered by the browser.
 
  Quixote is unique for its ability to test how elements relate to each other. For example, you can test if one element is below another element, or how an element compares to the browser's viewport.
-
-**Example test:**
 
 ```javascript
 // 'frame' is the Quixote test frame. See below for complete examples.
@@ -14,8 +11,6 @@ var navbar = frame.get(".navbar");
 navbar.top.should.equal(header.bottom);             // the navbar is immediately below the header
 navbar.width.should.equal(frame.viewport().width);  // the navbar is exactly as wide as the viewport
 ```
-
-**Example output:**
 
 ```
 top edge of '.navbar' should be 13px higher.
@@ -28,13 +23,6 @@ Quixote runs in the browser and works with any test framework. You can even test
 
 ## Resources
 
-* **[API Documentation](docs/api.md)**
-* **[Complete Example](example)**
-* **[Browsers Tested for This Release](build/config/tested_browsers.js)**
-* **[Change Log](CHANGELOG.md)**
-* **[Roadmap](ROADMAP.md)**
-* **[Contributing](CONTRIBUTING.md)**
-* **[License (MIT)](LICENSE.txt)**
 
 
 ## Installation
